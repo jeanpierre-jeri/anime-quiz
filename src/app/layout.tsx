@@ -15,10 +15,15 @@ export const metadata = {
   openGraph: {
     title: 'Anime Quiz',
     description: "Test your anime knowledge with our fun and challenging quiz! From classic series to the latest releases, our quiz covers a wide range of popular anime titles. Challenge yourself and your friends to see who can get the highest score. Take the quiz now and prove you're a true anime fan!",
-    siteName: 'Anime Quiz',
     images: [{ url: 'https://anime-quiz-pro.vercel.app/og.jpg' }],
     type: 'website',
     url: 'https://anime-quiz-pro.vercel.app'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Anime Quiz',
+    description: "Test your anime knowledge with our fun and challenging quiz! From classic series to the latest releases, our quiz covers a wide range of popular anime titles. Challenge yourself and your friends to see who can get the highest score. Take the quiz now and prove you're a true anime fan!",
+    images: [{ url: 'https://anime-quiz-pro.vercel.app/og.jpg' }]
   }
 }
 
