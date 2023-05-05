@@ -11,6 +11,10 @@ export const metadata = {
       url: '/favicon.svg',
       type: 'image/svg+xml'
     }
+  },
+  openGraph: {
+    images: [{ url: '/og-image.webp', width: 1063, height: 600 }],
+    type: 'website'
   }
 }
 
