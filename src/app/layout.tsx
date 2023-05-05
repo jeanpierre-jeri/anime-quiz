@@ -13,7 +13,7 @@ export const metadata = {
     }
   },
   openGraph: {
-    images: [{ url: '/og-image.jpg', width: 1063, height: 600 }],
+    images: [{ url: '/og.jpg', width: 1063, height: 600 }],
     type: 'website'
   }
 }
