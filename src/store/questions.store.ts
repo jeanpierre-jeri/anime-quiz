@@ -28,8 +28,6 @@ export const useQuestionsStore = create<QuestionStore>()((set, get) => ({
     const currentQuestion = questions[currentQuestionIndex]
     currentQuestion.userAnswer = answer
 
-    console.log('store', currentQuestion.userAnswer, currentQuestion.answer)
-
     set({ questions })
   },
   goNext: () => {
