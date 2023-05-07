@@ -3,13 +3,13 @@
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/Select'
 import { useQuestionsStore } from '@/store/questions.store'
 
-export function SelectDifficulty () {
+export function SelectDifficulty ({ initialDifficulty }: { initialDifficulty: string }) {
   const setDifficulty = useQuestionsStore(state => state.setDifficulty)
 
   return (
     <div className='flex items-center gap-2 text-white font-bold'>
       <h3 className='font-bold'>Dificulty:</h3>
-      <Select defaultValue='easy' onValueChange={setDifficulty}>
+      <Select defaultValue={initialDifficulty} onValueChange={setDifficulty}>
         <SelectTrigger className='w-28'>
           <SelectValue placeholder='Select difficulty' />
         </SelectTrigger>

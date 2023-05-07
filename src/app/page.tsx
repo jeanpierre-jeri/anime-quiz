@@ -14,7 +14,7 @@ export default async function Home () {
       <section className='relative px-4 md:px-0 w-full max-w-lg'>
         <div className='flex flex-col md:flex-row justify-between items-center md:items-start mb-4 gap-2'>
           <h1 className='uppercase font-bold text-zinc-100 text-center text-4xl'>Anime Quiz</h1>
-          <SelectDifficulty />
+          <SelectDifficulty initialDifficulty='easy' />
         </div>
         <Quiz />
       </section>
