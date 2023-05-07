@@ -4,7 +4,7 @@ import { decode } from 'html-entities'
 export async function getQuestions (difficulty: string = 'easy'): Promise<Question[]> {
   const url = `https://opentdb.com/api.php?amount=5&category=31&difficulty=${difficulty}&type=multiple`
   try {
-    const data = await fetch(url, { cache: 'no-cache' }).then(async res => await (res.json() as Promise<QuestionsApi>))
+    const data = await fetch(url, { next: { revalidate: 60 } }).then(async res => await (res.json() as Promise<QuestionsApi>))
 
     const questions = data.results.map((result) => {
       const answers = [...result.incorrect_answers, result.correct_answer]
