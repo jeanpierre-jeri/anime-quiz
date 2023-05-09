@@ -14,7 +14,7 @@ export function Result ({ setShowResult }: { setShowResult: (value: boolean) => 
   }
 
   return (
-    <div className='bg-white px-28 py-12 rounded-3xl'>
+    <div className='bg-white flex flex-col justify-center px-4 p-12 md:px-28 md:py-12 rounded-3xl'>
       <WinnerDraw />
 
       <h2 className='font-bold text-5xl text-[#1D355D] text-center mt-16'>Results</h2>
