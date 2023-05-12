@@ -23,7 +23,7 @@ export const useQuestionsStore = create<QuestionStore>()((set, get) => ({
     void get().reset()
   },
   selectAnswer: (answer: string) => {
-    const questions = get().questions
+    const questions = [...get().questions]
     const currentQuestionIndex = get().currentQuestionIndex
     const currentQuestion = questions[currentQuestionIndex]
     currentQuestion.userAnswer = answer
