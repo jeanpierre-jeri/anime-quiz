@@ -8,7 +8,7 @@ export function SelectDifficulty ({ initialDifficulty }: { initialDifficulty: st
 
   return (
     <div className='flex items-center gap-2 text-white font-bold'>
-      <h3 className='font-bold'>Dificulty:</h3>
+      <h3 className='font-bold'>Difficulty:</h3>
       <Select defaultValue={initialDifficulty} onValueChange={setDifficulty}>
         <SelectTrigger className='w-28'>
           <SelectValue placeholder='Select difficulty' />
